@@ -2,7 +2,13 @@
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println(" WELCOME TO THE WAR GAME ! ");
+		
+		Deck mydeck = new Deck();
+		
+		System.out.println(mydeck.getCard(46).getType());
+		System.out.println(mydeck.getCard(46).getSuit());
+		System.out.println(mydeck.getCard(46).getValue());
+		
 
 	}
 

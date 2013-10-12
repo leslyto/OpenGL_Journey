@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class Deck{
 	
@@ -8,6 +9,21 @@ public class Deck{
 	private Card[] delt = new Card[52]; //Cards already delt 
 	
 /// Private Func /////////////////////////////////////////////////////////////////////////////	
+	
+	private void shuffle(Card[] c_cards)
+	{
+		Random rand_num_gen = new Random();
+		Card temp = null;
+		
+		
+		for(short i = 0;i<(c_cards.length);i++)
+		{
+		   int random_num = rand_num_gen.nextInt(c_cards.length);
+		   temp = c_cards[i];
+		   c_cards[i] = c_cards[random_num];
+		   c_cards[random_num] = temp;
+		}
+	}
 	
 	private String returnType(int f_type)
 	{
@@ -91,7 +107,7 @@ public class Deck{
 	
 	public Deck() 
 	{
-		int temp_pos;
+		int temp_pos = 0;
 		
 		for(short i = 0; i <13;i++)
 		{
@@ -101,6 +117,8 @@ public class Deck{
 				temp_pos++;
 			}
 		}
+		
+		shuffle(cards);
 	}
 	
 }
