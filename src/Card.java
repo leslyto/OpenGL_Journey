@@ -10,7 +10,11 @@ public class Card {
 	{
 		type = f_type;
 		suit = f_suit;
+<<<<<<< HEAD
 		int test =2;
+=======
+		int test = 30;
+>>>>>>> db47b5cd5cd939a62bee4223a47ed131bdd21e8d
 	}
 	
 	//public
