@@ -3,7 +3,15 @@ public class Card {
 	//private
 	private String type;
 	private String suit;
-	private String value;
+	private int value;
+	
+	//constructor //SLOJI FUNKCIQ VALUE = TYPE
+	public Card(String f_type,String f_suit)
+	{
+		type = f_type;
+		suit = f_suit;
+		
+	}
 	
 	//public
 	public void setType(String typeln)
@@ -14,7 +22,7 @@ public class Card {
 	{
 		suit = suitln;
 	}
-	public void setValue(String valueln)
+	public void setValue(int valueln)
 	{
 		value = valueln;
 	}
@@ -26,7 +34,7 @@ public class Card {
 	{
 		return suit;
 	}
-	public String getValue()
+	public int getValue()
 	{
 		return value;
 	}
