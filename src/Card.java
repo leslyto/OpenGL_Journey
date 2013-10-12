@@ -10,7 +10,7 @@ public class Card {
 	{
 		type = f_type;
 		suit = f_suit;
-		
+		int test = 30;
 	}
 	
 	//public
