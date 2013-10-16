@@ -1,5 +1,7 @@
 
 public class Game {
+	
+/// Private Atributes /////////////////////////////////////////////////////////////////////////
 
 	private Card[] table_cards = new Card[8]; // Cards that are on the table
 	
@@ -9,7 +11,12 @@ public class Game {
 	
 	private Player[] playing_players = new Player[2];
 	
+/// Public Methods ////////////////////////////////////////////////////////////////////////////	
 	
+	private void deal()
+	{
+		
+	}
 	
 		
 }
